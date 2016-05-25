@@ -1,0 +1,67 @@
+/** CSS Resets **/
+h3, a, button {
+	margin: 0;
+	padding: 0;
+}
+button {
+	background: none;
+	border: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	-webkit-appearance: button;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+body {
+	font-size: 18px;
+	font-family: Helvetica;
+	background-color: #F5FFFA;
+	color: rgba(0,0,0,0.8);
+}
+* {
+	box-sizing: border-box;
+}
+a.button {
+	text-decoration: none;
+}
+button.button {
+
+}
+.button {
+	display: inline-block;
+	font-size: 0.875em;
+  	padding: 0.5em 1em;
+  	margin: 0.125em ;
+  	background-color: rgba(255,255,255,0.9);
+  	color: #666666;
+  	border: 1px solid #D3D3D3;
+  	border-radius: 0.1875em;
+  	cursor: pointer;
+}
+.button:hover, .button:focus {
+	box-shadow: 2px 2px 2px -2px #666666;
+	background-color: rgba(255,255,255,0.8);
+	color: rgba(0,0,0,0.8);
+}
+.button:active {
+	box-shadow: inset 2px 2px 1px #D3D3D3, inset -2px -2px 1px #D3D3D3;
+	outline: none;
+}
+.button:focus {
+	outline: none;
+}
+.button-sm {
+	font-size: 0.625em;
+	padding: 0.375em 0.625em;
+}
+.button-md {
+	font-size: 1.0625em;
+	padding: 0.625em 1.0625em;
+}
+.button-lg {
+	font-size: 1.25em;
+	padding: 0.875em 1.25em;
+}
