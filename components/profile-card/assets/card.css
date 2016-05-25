@@ -15,12 +15,15 @@ a {
 	text-decoration: none;
 }
 /** CARD */
+.container {
+	width: 25%;
+	margin: 0 auto;
+}
 .card {
 	font-size: 16px;
 	line-height: 1.6em;
-	width: 25%;
+	width: 100%;
 	padding: 2.5em;
-	margin: 0 auto;
 	border: 1px solid #D3D3D3;
 	background-color: #fafafa;
 }
@@ -28,41 +31,44 @@ a {
 	background-color: #00b8d4;
 	text-align: center;
 	padding: 0.5em;
+	border-radius: 3px;
 }
 .card-header img {
 	width: 100%;
 	height: 100%;
-	border: 3px solid #00b8d4;
+	border: 3px solid #eeeeee;
 	border-radius: 50% 50%;
 }
-
+.card-header h1, .card-body h2 {
+	word-wrap: break-word;
+}
 .card-header h1 {
 	color: #fafafa;
 	font-size: 2em;
-	line-height: 1em;
-	margin-bottom: 10px;
+	line-height: 1.2em;
+	margin-bottom: 0.3125em;
 }
 
 .card-body {
-	padding: 25px 0;
+	padding: 2em 0;
 	text-align: justify;
 }
 .card-body h2 {
 	color:#00b8d4;
-	font-size: 1.4em;
-	margin-bottom: 15px;
-
+	font-size: 1.375em;
+	margin-bottom: 0.625em;
+	text-align: center;
 }
 .card-body p {
 	color: #9e9e9e;
 }
 .card-footer {
-	padding-top: 20px;
+	padding-top: 0.75em;
 	border-top: 1px dotted #e0e0e0;
 }
 .card-footer a {
 	color: #DAA520;
 }
 .card-footer a:hover {
-	color: #e65100;
+	color: #BC8F8F;
 }

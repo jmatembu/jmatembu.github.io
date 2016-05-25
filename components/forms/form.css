@@ -1,0 +1,138 @@
+/** RESET */
+html, body, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+	box-sizing: border-box;
+	background-clip:padding-box;
+	border-radius:0;
+	-webkit-appearance:none;
+	background-color:#fff;
+	color:#000;
+	outline:0;
+	margin:0;
+	padding:0;
+	text-align: left;
+	font-size:1em;
+	height: 1em;
+	vertical-align: middle;
+}
+hgroup {
+	display: block;
+}
+button {
+	background: none;
+	border: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	-webkit-appearance: button;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+/** End Form Reset */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: rgba(230,230,250,0.5);
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+}
+.login {
+	width: 30%;
+	margin: 5% auto;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-top: 5px solid #00BFFF;
+	border-bottom: 1px dotted #00BFFF;
+	color: #666666;
+}
+.login h1 {
+	display: inline-block;
+}
+.login span {
+	display: inline-block;
+	float: right;
+	font-size: 0.75em;
+}
+.login span a {
+	color: #666666;
+}
+.login-header {
+	padding-bottom: 0.75em;
+	margin-bottom: 0.75em;
+	border-bottom: 1px dotted #e0e0e0;
+}
+.login-header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.login-header span {
+	padding-top: 20px;
+}
+
+
+.login-form input,
+.login-form button {
+	display: block;
+	width: 100%;
+}
+.login-form label {
+	display: inline-block;
+}
+.login-form label:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.login-form label span {
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+.login-form label span:last-child {
+	text-align: right;
+}
+.login-form input[type="email"],
+.login-form input[type="password"] {
+	width: 100%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.9375em;
+	font-size: 1.25em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #b3e5fc;
+	border-radius: 3px;
+}
+.login-form button {
+	height: 3.6em;
+	font-size: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 3px;
+}
+.login-form button:hover {
+	background-color: rgba(0,191,255,0.7);
+}

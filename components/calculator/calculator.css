@@ -56,15 +56,6 @@ input[type="text"] {
   	color: #666666;
   	cursor: pointer;
 }
-/**
-.calculator button:hover, .calculator button:focus {
-	box-shadow: 2px 2px 2px -2px #666666;
-	background-color: rgba(255,255,255,0.8);
-}
-.calculator button:active {
-	box-shadow: inset 2px 2px 1px #D3D3D3, inset -2px -2px 1px #D3D3D3;
-	outline: none;
-}*/
 
 .calculator button:focus {
 	outline: none;
