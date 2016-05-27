@@ -11,7 +11,9 @@ input[type="email"],
 input[type="month"],
 input[type="number"],
 input[type="password"],
+input[type="radio"],
 input[type="search"],
+input[type="submit"],
 input[type="tel"],
 input[type="text"],
 input[type="time"],
@@ -52,10 +54,20 @@ button {
 	box-sizing: border-box;
 }
 body {
-	background-color: rgba(230,230,250,0.5);
+	background-color: rgba(230,230,250,0.3);
 	font-size: 16px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Open Sans", sans-serif;
 }
+header {
+	height: 5em;
+	background-color: #090707;
+	padding: 0.625em;
+}
+header a {
+	text-decoration: none;
+	color: #FAFAFA;
+}
+/** LOGIN FORM */
 .login {
 	width: 30%;
 	margin: 5% auto;
@@ -63,8 +75,8 @@ body {
 	background-color: #FFFFFF;
 	border-radius: 5px;
 	border-top: 5px solid #00BFFF;
-	border-bottom: 1px dotted #00BFFF;
 	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 }
 .login h1 {
 	display: inline-block;
@@ -90,8 +102,6 @@ body {
 .login-header span {
 	padding-top: 20px;
 }
-
-
 .login-form input,
 .login-form button {
 	display: block;
@@ -105,16 +115,10 @@ body {
 	display: block;
 	clear: both;
 }
-.login-form label span {
-	display: inline-block;
-	float: left;
-	width: 50%;
-}
-.login-form label span:last-child {
-	text-align: right;
-}
 .login-form input[type="email"],
-.login-form input[type="password"] {
+.login-form input[type="password"],
+.login-form input[type="text"],
+.login-form input[type="date"] {
 	width: 100%;
 	height: 2.5em;
 	padding: 0.3125em;
@@ -122,7 +126,7 @@ body {
 	margin-bottom: 0.9375em;
 	font-size: 1.25em;
 	color: rgba(0,0,0,0.6);
-	border: 1px solid #b3e5fc;
+	border: 1px solid #AFE9FF;
 	border-radius: 3px;
 }
 .login-form button {
@@ -131,8 +135,288 @@ body {
 	cursor: pointer;
 	background-color: #00BFFF;
 	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.login-form button:hover, .login-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.login-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.login-form button:focus {
+	outline: none;
+}
+
+/** End Login Form */
+
+/** Sign Up Form */
+.signup {
+	width: 30%;
+	margin: 5% auto;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-top: 5px solid #00BFFF;
+	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.signup h1 {
+	display: inline-block;
+}
+.signup span {
+	float: right;
+	font-size: 0.75em;
+}
+.signup-form span {
+	margin-bottom: 0.25em;
+	font-style: italic;
+}
+.signup span a {
+	color: #666666;
+}
+.signup-header {
+	padding-bottom: 0.75em;
+	margin-bottom: 0.75em;
+	border-bottom: 1px dotted #e0e0e0;
+}
+.signup-header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.signup-header span {
+	padding-top: 20px;
+}
+.signup-form input,
+.signup-form button {
+	display: block;
+	width: 100%;
+}
+.signup-form label {
+	display: inline-block;
+}
+.signup-form label:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="text"],
+.signup-form input[type="date"] {
+	width: 100%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.9375em;
+	font-size: 1.25em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #AFE9FF;
 	border-radius: 3px;
 }
-.login-form button:hover {
-	background-color: rgba(0,191,255,0.7);
+.signup-form button {
+	height: 3.6em;
+	font-size: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.signup-form button:hover, .signup-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.signup-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.signup-form button:focus {
+	outline: none;
+}
+/** End Sign Up Form */
+
+/** Search Form*/
+.search {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	padding: 2.5em;
+	background-color: #B22222;
+}
+.search-form {
+	width: 50%;
+	height: 70px;
+	position: absolute;
+	top: 60%;
+	left: 25%;
+	padding: 4px;
+}
+.search-form input[type="search"] {
+	width: 50%;
+	height: 100%;
+	padding: 0.3125em;
+	font-size: 1.2em;
+	color: rgba(0,0,0,0.6);
+	border-radius: 20px 0 0 20px;
+	border-top: 2px solid #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+	border-left: 2px solid #FFFFFF;
+	border-right: 1px solid rgba(112,128,144,0.8);
+}
+.search-form select {
+	width: 30%;
+	height: 100%;
+	padding: 0.3125em;
+	font-size: 1.2em;
+	color: rgba(0,0,0,0.6);
+	background-color: #FAFAFA;
+	border: 2px solid #FFFFFF;
+}
+.search-form input[type="submit"] {
+	width: 120px;
+	cursor: pointer;
+	height: 100%;
+	padding: 0.3125em;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #00BFFF;
+	border-radius: 0 20px 20px 0;
+	border: 2px solid #FFFFFF;
+	color: #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.search-form input[type="submit"]:hover, .search-form input[type="submit"]:focus {
+	background-color: #EFDC05;
+	color: #000000;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.search-form button:focus {
+	outline: none;
+}
+/** End search */
+
+/** Questionnaire */
+.questionnaire {
+	width: 50%;
+	margin: 2.5em auto;
+}
+
+.question {
+	width: 100%;
+	margin: 5% auto;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-left: 5px solid #00BFFF;
+	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.options label {
+	display: block;
+	width: 100%;
+	padding: 0.625em 0;
+}
+.options label input[type="radio"] {
+	margin-right: 15px;
+	border: 2px solid #AFE9FF;
+	background-color: #fff;
+	width: 1.25em;
+    height: 1.25em;
+    border-radius: 50% 50%;
+    transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.options label input[type="radio"]:hover,
+.options label input[type="radio"]:focus {
+	margin-right: 15px;
+	border: 2px solid #AFE9FF;
+	background-color: #00BFFF;
+	width: 1.25em;
+    height: 1.25em;
+    border-radius: 50% 50%;
+    transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.questionnaire-form input[type="text"] {
+	width: 40%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.9375em;
+	font-size: 1em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #AFE9FF;
+	border-radius: 3px;
+}
+.questionnaire-form button {
+	float: right;
+	min-width: 6.25em;
+	height: 2.5em;
+	font-size: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.questionnaire-form button:hover, .login-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.questionnaire-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.questionnaire-form button:focus {
+	outline: none;
+}
+.question-title {
+	padding-bottom: 1.5em;
 }

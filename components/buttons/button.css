@@ -16,38 +16,48 @@ button {
 	-ms-user-select: none;
 }
 body {
-	font-size: 18px;
-	font-family: Helvetica;
+	font-size: 16px;
+	font-family: "Roboto", "Open Sans", sans-serif;
 	background-color: #F5FFFA;
 	color: rgba(0,0,0,0.8);
 }
 * {
 	box-sizing: border-box;
 }
+h3 {
+	margin-top: 0.75em;
+	margin-bottom: 0.625em;
+}
 a.button {
 	text-decoration: none;
 }
-button.button {
 
-}
 .button {
 	display: inline-block;
 	font-size: 0.875em;
   	padding: 0.5em 1em;
   	margin: 0.125em ;
-  	background-color: rgba(255,255,255,0.9);
-  	color: #666666;
-  	border: 1px solid #D3D3D3;
+  	background-color: #d32f2f;
+  	color: #fff;
   	border-radius: 0.1875em;
   	cursor: pointer;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
 }
 .button:hover, .button:focus {
-	box-shadow: 2px 2px 2px -2px #666666;
+	box-shadow: 0 4px 2px -2px #d32f2f, 0 -2px 1px -2px #d32f2f;
 	background-color: rgba(255,255,255,0.8);
-	color: rgba(0,0,0,0.8);
+	color: #000000;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
 }
 .button:active {
-	box-shadow: inset 2px 2px 1px #D3D3D3, inset -2px -2px 1px #D3D3D3;
+	box-shadow: inset 0 -3px 1px -2px #d32f2f, inset 0 2px 2px -2px #d32f2f;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
 	outline: none;
 }
 .button:focus {
