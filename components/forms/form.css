@@ -68,6 +68,71 @@ header a {
 	text-decoration: none;
 	color: #FAFAFA;
 }
+img {
+	width: 100%;
+	height: 100%;
+}
+.row {
+	width: 100%;
+}
+.row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.col1 {
+	width: 8.333333%;
+}
+.col2 {
+	width: 16.66667%;
+}
+.col3 {
+	width: 25%;
+}
+.col4 {
+	width: 33.33333%;
+}
+.col5 {
+	width: 41.66667%;
+}
+.col6 {
+	width: 50%;
+}
+.col7 {
+	width: 58.33333%;
+}
+.col8 {
+	width: 66.66667%;
+}
+.col9 {
+	width: 75%;
+}
+.col10 {
+	width: 83.33333%;
+}
+.col11 {
+	width: 91.66667%;
+}
+.col12 {
+	width: 100%;
+}
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10,
+.col11 {
+	float: left;
+}
+.right {
+	float: right;
+}
+
 /** LOGIN FORM */
 .login {
 	width: 30%;
@@ -118,8 +183,7 @@ header a {
 }
 .login-form input[type="email"],
 .login-form input[type="password"],
-.login-form input[type="text"],
-.login-form input[type="date"] {
+.login-form input[type="text"] {
 	width: 100%;
 	height: 2.5em;
 	padding: 0.3125em;
@@ -129,6 +193,10 @@ header a {
 	color: rgba(0,0,0,0.6);
 	border: 1px solid #AFE9FF;
 	border-radius: 3px;
+}
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+	border: 3px solid #AFE9FF;
 }
 .login-form button {
 	height: 3.6em;
@@ -229,6 +297,12 @@ header a {
 	color: rgba(0,0,0,0.6);
 	border: 1px solid #AFE9FF;
 	border-radius: 3px;
+}
+.signup-form input[type="email"]:focus,
+.signup-form input[type="text"]:focus,
+.signup-form input[type="password"]:focus,
+.signup-form input[type="date"]:focus {
+	border: 3px solid #AFE9FF;
 }
 .signup-form button {
 	height: 3.6em;
@@ -393,6 +467,9 @@ header a {
 	border: 1px solid #AFE9FF;
 	border-radius: 3px;
 }
+.questionnaire-form input[type="text"]:focus {
+	border: 3px solid #AFE9FF;
+}
 .questionnaire-form button {
 	float: right;
 	min-width: 6.25em;
@@ -510,3 +587,398 @@ header a {
 	border-radius: 5px;
 	margin-top: -15px;
 }
+
+/** Billing Form */
+.billing-container {
+	width: 60%;
+	margin: 5% auto;
+}
+.billing {
+	width: 100%;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-top: 5px solid #00BFFF;
+	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.billing h1 {
+	display: inline-block;
+}
+.billing span {
+	float: right;
+	font-size: 0.75em;
+}
+.billing span a {
+	color: #666666;
+}
+.billing-header {
+	padding-bottom: 0.75em;
+	margin-bottom: 1.625em;
+	border-bottom: 1px dotted #e0e0e0;
+}
+.billing-header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.billing-form:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.billing-form .col6,
+.billing-form .col12 {
+	padding: 1.5%;
+}
+
+.billing-form span {
+	margin-bottom: 0.25em;
+	font-style: italic;
+}
+.billing-form fieldset {
+	border: 2px dotted #e0e0e0;
+	padding: 4% 3%;
+	margin-bottom: 5%;
+}
+.billing-form fieldset:last-child {
+	border: none;
+	padding: 0 3%;
+}
+.billing-form fieldset legend {
+	padding: 0 1.5%;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.billing-form input,
+.billing-form button {
+	display: block;
+	width: 100%;
+}
+.billing-form label {
+	cursor: pointer;
+}
+.billing-form input[type="text"] {
+	width: 100%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.75em;
+	font-size: 1.25em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #AFE9FF;
+	border-radius: 3px;
+}
+.billing-form input[type="text"]:focus {
+	border: 3px solid #AFE9FF;
+	border-radius: 3px;
+}
+.billing-form input[type="checkbox"] {
+	display: inline-block;
+    width: 30px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid #AFE9FF;
+    cursor: pointer;
+}
+.billing-form button {
+	height: 3.6em;
+	font-size: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.billing-form button:hover, .billing-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.billing-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.billing-form button:focus {
+	outline: none;
+}
+
+/** APPOINTMENT SCHEDULE FORM */
+.appointment-container {
+	width: 60%;
+	margin: 5% auto;
+}
+.appointment {
+	width: 100%;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-top: 5px solid #00BFFF;
+	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.appointment h1 {
+	display: inline-block;
+}
+.appointment span {
+	float: right;
+	font-size: 0.75em;
+}
+.appointment-form span {
+	margin-bottom: 0.25em;
+	font-style: italic;
+}
+.appointment span a {
+	color: #666666;
+}
+.appointment-header {
+	padding: 1.5%;
+	margin-bottom: 0.75em;
+	border-bottom: 1px dotted #e0e0e0;
+}
+.appointment-header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.appointment-header span {
+	padding-top: 20px;
+}
+.appointment-form:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.appointment-form .col6,
+.appointment-form .col4,
+.appointment-form .col12 {
+	padding: 1.5%;
+}
+.appointment-form input,
+.appointment-form button {
+	display: block;
+	width: 100%;
+}
+.appointment-form label {
+	display: inline-block;
+}
+.appointment-form label:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.appointment-form input[type="email"],
+.appointment-form input[type="text"],
+.appointment-form input[type="date"],
+.appointment-form input[type="time"],
+.appointment-form select,
+.appointment-form textarea {
+	width: 100%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.9375em;
+	font-size: 1.25em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #AFE9FF;
+	border-radius: 3px;
+}
+.appointment-form input[type="email"]:focus,
+.appointment-form input[type="text"]:focus,
+.appointment-form input[type="date"]:focus,
+.appointment-form input[type="time"]:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+	border: 3px solid #AFE9FF;
+}
+.appointment-form textarea {
+	height: 10em;
+}
+.appointment-form button {
+	height: 3em;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.appointment-form button:hover, .appointment-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.appointment-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.appointment-form button:focus {
+	outline: none;
+}
+/** Appointment Form */
+
+/** Payment SCHEDULE FORM */
+.payment-container {
+	width: 50%;
+	margin: 5% auto;
+}
+.payment {
+	width: 100%;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-top: 5px solid #00BFFF;
+	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.payment h1 {
+	display: inline-block;
+}
+.payment span {
+	float: right;
+	font-size: 0.75em;
+}
+.payment-form span {
+	margin-bottom: 0.25em;
+	font-style: italic;
+}
+.payment span a {
+	color: #666666;
+}
+.payment-header {
+	padding: 1.5%;
+	margin-bottom: 0.75em;
+	border-bottom: 1px dotted #e0e0e0;
+}
+.payment-header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.payment-header span {
+	padding-top: 20px;
+}
+.payment-form:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.payment-form .col2,
+.payment-form .col3,
+.payment-form .col4,
+.payment-form .col6,
+.payment-form .col9,
+.payment-form .col12 {
+	padding: 1.5%;
+}
+.payment-form img {
+	opacity: 0.8;
+}
+.payment-form input,
+.payment-form button {
+	display: block;
+	width: 100%;
+}
+.payment-form label {
+	display: inline-block;
+}
+.payment-form label:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.payment-form input[type="email"],
+.payment-form input[type="text"],
+.payment-form input[type="date"],
+.payment-form input[type="time"],
+.payment-form select,
+.payment-form textarea {
+	width: 100%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.9375em;
+	font-size: 1.25em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #AFE9FF;
+	border-radius: 3px;
+}
+.payment-form input[type="email"]:focus,
+.payment-form input[type="text"]:focus,
+.payment-form input[type="date"]:focus,
+.payment-form input[type="time"]:focus,
+.payment-form select:focus,
+.payment-form textarea:focus {
+	border: 3px solid #AFE9FF;
+}
+.payment-form textarea {
+	height: 10em;
+}
+.payment-form button {
+	height: 3em;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.payment-form button:hover, .payment-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.payment-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.payment-form button:focus {
+	outline: none;
+}
+.payment-form p.label {
+	background-color: #e0e0e0;
+	color: #999999;
+	text-align: center;
+	padding: 2% 0;
+}
+.visa-img, .cvv {
+	margin-top: 0.3125em;
+}
+/** Payment Form */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Credit / Depart Card Form</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<header><a href="../../index.html"><h1>Back to Projects</h1></a></header>
+	<div class="payment-container">
+		<div class="payment">
+			<div class="payment-secure">
+				<p>Secure payment</p>
+			</div>
+			<div class="payment-header">
+				<h1>Schedule an Appointment</h1>
+			</div>
+			<form class="payment-form">
+				<div class="col12">
+					<label for="name">Name <small>as it appears on card</small></label>
+					<input type="text" name="name" id="name" autofocus>
+				</div>
+				<div class="row">
+					<div class="col9">
+						<label for="card-number">Card Number <small>use your Credit / Debit card</small></label>
+						<input type="text" name="card_number" id="card-number">
+					</div>
+					<div class="col3">
+						<label for="card-number">&nbsp; </label>
+						<img src="../assets/visa.jpg" class="visa-img">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col12">
+						<p>When does the card expire?</p>
+					</div>
+					<div class="col3">
+						<label for="schedule-timezone">Month</label>
+						<select>
+							<option>January</option>
+							<option>February</option>
+							<option>March</option>
+							<option>April</option>
+							<option>May</option>
+							<option>June</option>
+							<option>July</option>
+							<option>August</option>
+							<option>September</option>
+							<option>October</option>
+							<option>November</option>
+							<option>December</option>
+						</select>
+					</div>
+					<div class="col3">
+						<label for="schedule-timezone">Year</label>
+						<select>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+							<option>2019</option>
+							<option>2020</option>
+							<option>2021</option>
+						</select>
+					</div>
+					<div class="col3">
+						<label for="cvv">CVV2/CVC2</label>
+						<input type="text" name="cvv" id="cvv">
+					</div>
+					<div class="col3">
+						<label for="cvv">&nbsp;</label>
+						<span class="cvv">The last 3 digits on the back of your card.</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col12">
+						<p class="label">You will be charged $100</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col6 right">
+						<button type="submit">Complete Payment</button>
+					</div>
+				</div>
+	
+			</form>
+		</div>
+	</div>
+</body>
+</html>
