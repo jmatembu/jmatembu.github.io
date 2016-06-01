@@ -23,10 +23,8 @@
 						<li><a href="components/forms/billing.html">Billing and Shipping</a></li>
 						<li><a href="components/forms/appointment.html">Appointment Scheduling</a></li>
 						<li><a href="components/forms/payment.html">Credit/Debit Card</a></li>
-						
 					</ul>
 				</li>
-				<li><a href="components/shop/index.html">Product Listing</a></li>
 			</ul>
 		</nav>
 	</header>
