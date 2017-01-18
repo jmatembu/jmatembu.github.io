@@ -728,7 +728,7 @@ textarea.invalid {
 		width: 70%;
 		margin: 0 auto;
 	}
-  .login,
+/*  .login,
   .signup,
   .search,
   .color-builder,
@@ -736,7 +736,7 @@ textarea.invalid {
   .questionnaire {
     width: 80%;
   }
-  /*.appointment {
+	.appointment {
     width: 90%;
   }*/
 }
