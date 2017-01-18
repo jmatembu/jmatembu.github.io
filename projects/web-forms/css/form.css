@@ -1,7 +1,7 @@
+
 /* Login
  -------------------------------------------------*/
 .login {
-	width: 65%;
 	margin: 5% auto;
 	padding: 2.5rem;
 	background-color: #FFFFFF;
@@ -653,23 +653,33 @@ select.invalid,
 textarea.invalid {
 	border: 1px solid #FF0000;
 }
-@media (max-width: 1024px) {
-  .login,
-  .signup,
-  .search,
-  .color-builder,
-  .payment,
-  .questionnaire {
-    width: 80%;
+
+@media (max-width: 360px) {
+  .appointment-header h1 {
+    font-size: 1.875rem;
   }
-  .appointment {
-    width: 90%;
+  .login-header span,
+  .signup-header span {
+    padding-top: 1rem;
+  }
+
+  .questionnaire-form input[type="text"] {
+    width: 100%;
+  }
+
+  .questionnaire-form button {
+      width: 100%;
+  }
+
+  .options label {
+    font-size: 1rem;
   }
 }
+
 @media (max-width: 360px), (max-width: 600px) {
-  .container {
-    max-width: 100%;
-  }
+	.container {
+	  width: 100%;
+	}
 
 	.login,
   .signup,
@@ -678,7 +688,7 @@ textarea.invalid {
   .payment,
   .questionnaire {
 		width: 100%;
-    padding: 1rem;
+    padding: 1em;
 	}
   .login-header h1,
   .signup-header h1 {
@@ -711,24 +721,22 @@ textarea.invalid {
     margin-top: 2.25rem;
   }
 }
-@media (max-width: 360px) {
-  .appointment-header h1 {
-    font-size: 1.875rem;
-  }
-  .login-header span,
-  .signup-header span {
-    padding-top: 1rem;
-  }
 
-  .questionnaire-form input[type="text"] {
-    width: 100%;
-  }
+@media (max-width: 1024px) {
 
-  .questionnaire-form button {
-      width: 100%;
+	.container {
+		width: 70%;
+		margin: 0 auto;
+	}
+  .login,
+  .signup,
+  .search,
+  .color-builder,
+  .payment,
+  .questionnaire {
+    width: 80%;
   }
-
-  .options label {
-    font-size: 1rem;
-  }
+  /*.appointment {
+    width: 90%;
+  }*/
 }
